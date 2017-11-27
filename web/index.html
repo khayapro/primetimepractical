@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prime Time</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+   
+  </head>
+  <body>
+    <h1>Prime Time</h1>
+    <form>
+      <p>
+        Please enter a lower and an upper number between which prime numbers will be calculated:
+      </p>
+      <div>
+        <label for="lower-number">Lower number:</label>
+        <input id="lower-number" type="text" placeholder="Example: 5" onblur="validateInputs();"/>
+        <span id="lower-number-error" class="error"></span>
+      </div>
+      <div>
+        <label for="upper-number">Upper number:</label>
+        <input id="upper-number" type="text" placeholder="Example: 5" onblur="validateInputs();"/>
+        <span id="upper-number-error" class="error"></span>
+      </div>
+      <div>
+        <input type="checkbox" value="true" id="sieve" />
+      </div>
+      <button id="submit" type="submit">Calculate Primes</button>
+    </form>
+    <div id="result"></div>
+  </body>
+</html>
